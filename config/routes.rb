@@ -1,4 +1,8 @@
 LawyerTools::Application.routes.draw do
+  get "defined_terms/input"
+
+  get "defined_terms/result"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
