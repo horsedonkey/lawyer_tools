@@ -5,7 +5,7 @@ describe "DefinedTerms" do
   describe "Input page" do
 
     it "should have the content 'Defined Terms'" do
-      visit '/defined_terms/input'
+      visit input_path
       page.should have_content('Defined Terms')
     end
   end
