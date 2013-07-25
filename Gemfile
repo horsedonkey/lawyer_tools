@@ -8,6 +8,9 @@ group :development, :test do
   gem 'rspec-rails', '2.11.0'
 end
 
+group :development do
+  gem 'annotate', '2.5.0'
+end
 
 group :assets do
   gem 'sass-rails',   '3.2.5'
