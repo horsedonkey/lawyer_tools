@@ -11,4 +11,6 @@
 
 class Contract < ActiveRecord::Base
   attr_accessible :original, :undefined_terms
+
+  validates :original, presence: true
 end

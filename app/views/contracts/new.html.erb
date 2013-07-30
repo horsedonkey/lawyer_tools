@@ -1,0 +1,13 @@
+<% provide(:title, 'Contract Input') %>
+<h1>Please Cut-and-Paste the Text of the Contract to Be Analyzed</h1>
+<div class="row">
+  <div class="span6 offset3 center">
+    <%= form_for(@contract) do |f| %>
+
+      <%= f.label :original %>
+      <%= f.text_area :original, class: 'span8' %>
+      <br>
+      <%= f.submit "Submit for Processing", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

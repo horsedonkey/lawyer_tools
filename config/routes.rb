@@ -1,5 +1,7 @@
 LawyerTools::Application.routes.draw do
-  root to: 'defined_terms#input'
+  resources :contracts
+
+  root to: 'contracts#new'
   #get "defined_terms/input"
   match '/input', to: 'defined_terms#input'
   match '/result', to: 'defined_terms#result'
